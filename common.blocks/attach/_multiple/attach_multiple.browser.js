@@ -1,10 +1,9 @@
 /* global modules:false */
 
 modules.define('attach',
-               ['i-bem__dom'],
-               function(provide, BEMDOM) {
+               function(provide, Attach) {
 
-    BEMDOM.decl({ block : 'attach', modName : 'multiple', modVal : true }, {
+    provide(Attach.declMod({ modName : 'multiple' }, {
 
         _onChange : function() {
             var control = this.findElem('control');
@@ -19,9 +18,7 @@ modules.define('attach',
         getFiles : function(){
             return this._files;
         }
-    });
-
-    provide(BEMDOM);
+    }));
 
 });
 
