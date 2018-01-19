@@ -9,7 +9,7 @@ provide(bemDom.declBlock(this.name, {
 }, {
     lazyInit : false,
     onInit : function(){
-        this._domEvents().('pointerover pointerout', function(){
+        this._domEvents().on('pointerover pointerout', function(){
             this.toggleMod('hovered');
         });
     }
