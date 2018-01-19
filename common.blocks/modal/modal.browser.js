@@ -2,7 +2,7 @@
 
 modules.define('modal',
     ['i-bem-dom', 'jquery'],
-    function(provide, $, bemDom, Modal) {
+    function(provide, bemDom, $, Modal) {
 
 provide(bemDom.declBlock(Modal, {
     onSetMod : {
