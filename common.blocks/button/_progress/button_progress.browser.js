@@ -10,7 +10,7 @@ provide(Button.declMod({ modName : 'progress', modVal : '*' }, {
                     time = now - this._startTime,
                     onTime = time > this._to;
                 if(!onTime){
-                    this.nextTick(function(){
+                    this._nextTick(function(){
                         this.delMod('process');
                     });
                 }

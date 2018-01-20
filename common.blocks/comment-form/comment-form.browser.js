@@ -158,7 +158,7 @@ provide(bemDom.declBlock(this.name, {
     lazyInit : false,
     onInit : function(){
         var focus = function(){
-            this.nextTick(
+            this._nextTick(
                 function(){
                     this.setMod('focused');
             });

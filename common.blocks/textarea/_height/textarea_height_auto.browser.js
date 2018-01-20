@@ -4,7 +4,7 @@ modules.define('textarea',
 provide(Textarea.declMod({ modName : 'height', modVal : 'auto' }, {
 
     _updateHeight : function(){
-        this.nextTick(function(){
+        this._nextTick(function(){
             var control = this._elem('control').domElem[0];
             control.style.height = 'auto';
             control.style.height = control.scrollHeight + 'px';
